@@ -8,28 +8,51 @@ import org.springframework.data.annotation.Id;
 public class Player {
 
     @Id
-    private ObjectId _Id;
+    private String _id;
 
     private String contentType;
 
     private String contentDesc;
 
     private String contentTitle;
+		 
+    private String  inputFormat;
+    
+    private String outputFormat;
+    
+    private String difficulty;
+    
+    private String tags;
 
 
-    public Player(ObjectId _Id, String contentType, String contentDesc, String contentTitle) {
-        this._Id = _Id;
-        this.contentType = contentType;
-        this.contentDesc = contentDesc;
-        this.contentTitle = contentTitle;
-    }
+    private String gitUrl;
+
+    private String username;
 
     public Player() {
     }
 
-    // ObjectId needs to be converted to string
-    public String get_id() { return _Id.toHexString(); }
-    public void set_id(ObjectId _id) { this._Id = _id; }
+    public Player(String _Id, String contentType, String contentDesc, String contentTitle, String inputFormat, String outputFormat, String difficulty, String tags, String gitUrl, String username) {
+        this._id = _Id;
+        this.contentType = contentType;
+        this.contentDesc = contentDesc;
+        this.contentTitle = contentTitle;
+        this.inputFormat = inputFormat;
+        this.outputFormat = outputFormat;
+        this.difficulty = difficulty;
+        this.tags = tags;
+        this.gitUrl = gitUrl;
+        this.username = username;
+    }
+
+
+    public String get_Id() {
+        return _id;
+    }
+
+    public void set_Id(String _Id) {
+        this._id = _Id;
+    }
 
     public String getContentType() {
         return contentType;
@@ -38,7 +61,6 @@ public class Player {
     public void setContentType(String contentType) {
         this.contentType = contentType;
     }
-
 
     public String getContentDesc() {
         return contentDesc;
@@ -56,16 +78,70 @@ public class Player {
         this.contentTitle = contentTitle;
     }
 
-    @Override
-    public String toString() {
-        return "Player{" +
-                "contentId=" + _Id +
-                ", contentType='" + contentType + '\'' +
-                ", contentDesc='" + contentDesc + '\'' +
-                ", contentTitle='" + contentTitle + '\'' +
-                '}';
+    public String getInputFormat() {
+        return inputFormat;
+    }
+
+    public void setInputFormat(String inputFormat) {
+        this.inputFormat = inputFormat;
+    }
+
+    public String getOutputFormat() {
+        return outputFormat;
+    }
+
+    public void setOutputFormat(String outputFormat) {
+        this.outputFormat = outputFormat;
+    }
+
+    public String getDifficulty() {
+        return difficulty;
+    }
+
+    public void setDifficulty(String difficulty) {
+        this.difficulty = difficulty;
+    }
+
+    public String getTags() {
+        return tags;
+    }
+
+    public void setTags(String tags) {
+        this.tags = tags;
+    }
+
+    public String getGitUrl() {
+        return gitUrl;
+    }
+
+    public void setGitUrl(String gitUrl) {
+        this.gitUrl = gitUrl;
+    }
+
+    public String getUsername() {
+        return username;
     }
 
 
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    @Override
+    public String toString() {
+        return "Player{" +
+                "_Id='" + _id + '\'' +
+                ", contentType='" + contentType + '\'' +
+                ", contentDesc='" + contentDesc + '\'' +
+                ", contentTitle='" + contentTitle + '\'' +
+                ", inputFormat='" + inputFormat + '\'' +
+                ", outputFormat='" + outputFormat + '\'' +
+                ", difficulty='" + difficulty + '\'' +
+                ", tags='" + tags + '\'' +
+                ", gitUrl='" + gitUrl + '\'' +
+                ", username='" + username + '\'' +
+                '}';
+    }
 
 }
