@@ -1,27 +1,31 @@
 package com.stackroute.mashupcontent.model;
 
 
+import lombok.Data;
 import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.mongodb.core.mapping.Field;
 
-
+@Data
+@Document(collection="player")
 public class Player {
 
     @Id
-    private String _id;
-
+    public int contentId;
+    @Field
     private String contentType;
-
+    @Field
     private String contentDesc;
-
+    @Field
     private String contentTitle;
-		 
+    @Field
     private String  inputFormat;
-    
+    @Field
     private String outputFormat;
-    
+    @Field
     private String difficulty;
-    
+    @Field
     private String tags;
 
 
@@ -32,8 +36,16 @@ public class Player {
     public Player() {
     }
 
-    public Player(String _Id, String contentType, String contentDesc, String contentTitle, String inputFormat, String outputFormat, String difficulty, String tags, String gitUrl, String username) {
-        this._id = _Id;
+    public int getContentId() {
+        return contentId;
+    }
+
+    public void setContentId(int contentId) {
+        this.contentId = contentId;
+    }
+
+    public Player(int contentId, String contentType, String contentDesc, String contentTitle, String inputFormat, String outputFormat, String difficulty, String tags, String gitUrl, String username) {
+        this.contentId = contentId;
         this.contentType = contentType;
         this.contentDesc = contentDesc;
         this.contentTitle = contentTitle;
@@ -46,13 +58,7 @@ public class Player {
     }
 
 
-    public String get_Id() {
-        return _id;
-    }
 
-    public void set_Id(String _Id) {
-        this._id = _Id;
-    }
 
     public String getContentType() {
         return contentType;
@@ -131,7 +137,7 @@ public class Player {
     @Override
     public String toString() {
         return "Player{" +
-                "_Id='" + _id + '\'' +
+                "contentId='" + contentId + '\'' +
                 ", contentType='" + contentType + '\'' +
                 ", contentDesc='" + contentDesc + '\'' +
                 ", contentTitle='" + contentTitle + '\'' +
