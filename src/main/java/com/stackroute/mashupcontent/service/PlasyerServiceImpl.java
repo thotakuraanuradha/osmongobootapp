@@ -51,7 +51,7 @@ public class PlasyerServiceImpl implements PlayerService {
 
     /*method for incrementing sequence value*/
     public static Object getNextSequence(String name){
-        MongoClient mongoClient = new MongoClient("localhost", 27017);
+        MongoClient mongoClient = new MongoClient("mongodb://user680:xyrnTtIFThASX8De@mongodb/contentRepoDB");
         DB db = mongoClient.getDB("contentDB");
         DBCollection collection = db.getCollection("counters");
         BasicDBObject find = new BasicDBObject();
