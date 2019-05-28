@@ -5,7 +5,7 @@ import org.bson.types.ObjectId;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 
-public interface PlayerRepository extends MongoRepository<Player, String> {
+public interface PlayerRepository extends MongoRepository<Player, Integer> {
 
-    Player findBy_id(String _Id);
+    //Player findBy_id(int  contentId);
 }

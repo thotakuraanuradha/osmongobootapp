@@ -32,10 +32,17 @@ public class PlayerController {
     @Autowired
     PlayerRepository playerRepo;
 
+    @Autowired
+    PlayerService playerService;
+
     private static final Logger logger = LogManager.getLogger();
 
 
 
+    @RequestMapping(value = "/home", method = GET)
+    public String Hello(){
+        return "application is up ";
+    }
 
     @RequestMapping(value = "/", method = POST)
     public ResponseEntity<String> craeteContent(@Valid @RequestBody RequestDto requestDto) {
@@ -45,9 +52,9 @@ public class PlayerController {
 
 
         try{
-            Player player = playerRepo.save(requestDto.getPlayer() );
+            responseDto = playerService.createContent(requestDto);
             ObjectMapper mapper = new ObjectMapper();
-            responseDto.setPlayer(player);
+           // responseDto.setPlayer(player);
 
             String jsonInString = null;
             try {
@@ -101,7 +108,7 @@ public class PlayerController {
 
 
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
-    public ResponseEntity<String> getContentById(@PathVariable("id") String id) {
+    public ResponseEntity<String> getContentById(@PathVariable("id") int id) {
 
 
         ResponseDto responseDto = new ResponseDto();
@@ -142,7 +149,7 @@ public class PlayerController {
 //    }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
-    public ResponseEntity<String> deleteContent(@PathVariable String id) {
+    public ResponseEntity<String> deleteContent(@PathVariable int id) {
 
         ResponseDto responseDto = new ResponseDto();
         ResponseEntity responseEntity = null;
