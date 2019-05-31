@@ -27,24 +27,18 @@ public class Player {
     private String difficulty;
     @Field
     private String tags;
-
-
+    @Field
     private String gitUrl;
-
+    @Field
     private String username;
+    @Field
+    private String branchName;
+
 
     public Player() {
     }
 
-    public int getContentId() {
-        return contentId;
-    }
-
-    public void setContentId(int contentId) {
-        this.contentId = contentId;
-    }
-
-    public Player(int contentId, String contentType, String contentDesc, String contentTitle, String inputFormat, String outputFormat, String difficulty, String tags, String gitUrl, String username) {
+    public Player(int contentId, String contentType, String contentDesc, String contentTitle, String inputFormat, String outputFormat, String difficulty, String tags, String gitUrl, String username, String branchName) {
         this.contentId = contentId;
         this.contentType = contentType;
         this.contentDesc = contentDesc;
@@ -55,10 +49,25 @@ public class Player {
         this.tags = tags;
         this.gitUrl = gitUrl;
         this.username = username;
+        this.branchName = branchName;
+    }
+
+    public int getContentId() {
+        return contentId;
+    }
+
+    public void setContentId(int contentId) {
+        this.contentId = contentId;
     }
 
 
+    public String getBranchName() {
+        return branchName;
+    }
 
+    public void setBranchName(String branchName) {
+        this.branchName = branchName;
+    }
 
     public String getContentType() {
         return contentType;
