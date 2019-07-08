@@ -1,34 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="74359156-2579-4370-a2f0-e35b94fef2ec" name="Default Changelist" comment="Added branchName column">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongo_java_driver_3_9_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/stackroute/mashupcontent/service/ContentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_3_8_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_core_3_8_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_mongodb_2_1_4_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_mongodb_2_1_6_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_mongodb_2_1_3_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mashupcontent.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mashupcontent.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stackroute/mashupcontent/comman/RequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stackroute/mashupcontent/comman/RequestDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stackroute/mashupcontent/comman/ResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stackroute/mashupcontent/comman/ResponseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stackroute/mashupcontent/controller/PlayerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stackroute/mashupcontent/controller/ContentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stackroute/mashupcontent/model/Counters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stackroute/mashupcontent/model/Counters.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stackroute/mashupcontent/model/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stackroute/mashupcontent/model/MashupContent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stackroute/mashupcontent/repositories/PlayerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stackroute/mashupcontent/repositories/ContentRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stackroute/mashupcontent/service/PlasyerServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stackroute/mashupcontent/service/PlayerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stackroute/mashupcontent/service/ContentService.java" afterDir="false" />
+    <list default="true" id="74359156-2579-4370-a2f0-e35b94fef2ec" name="Default Changelist" comment="Changed the context root">
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/stackroute/mashupcontent/comman/RequestDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/stackroute/mashupcontent/comman/RequestDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/stackroute/mashupcontent/comman/ResponseDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/stackroute/mashupcontent/comman/ResponseDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/stackroute/mashupcontent/controller/PlayerController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/stackroute/mashupcontent/model/Player.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/stackroute/mashupcontent/repositories/PlayerRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/stackroute/mashupcontent/service/PlasyerServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/stackroute/mashupcontent/service/PlayerService.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -43,28 +17,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="135">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/stackroute/mashupcontent/comman/RequestDto.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/stackroute/mashupcontent/service/ContentService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="25" column="27" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="120">
+              <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/stackroute/mashupcontent/controller/ContentController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="82">
@@ -185,8 +156,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/stackroute/mashupcontent/service/ContentServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/stackroute/mashupcontent/model/MashupContent.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/stackroute/mashupcontent/model/MashupContentSequence.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/stackroute/mashupcontent/controller/ContentController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
       </list>
     </option>
   </component>
@@ -434,7 +405,14 @@
       <option name="project" value="LOCAL" />
       <updated>1559283605851</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Changed the context root">
+      <created>1562573538623</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1562573538623</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -458,7 +436,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5019952" side_tool="true" weight="0.92671007" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49960095" weight="0.32899022" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32736155" />
+      <window_info anchor="bottom" id="Messages" order="10" visible="true" weight="0.32736155" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -479,7 +457,8 @@
     <MESSAGE value="Changed Id to contentID" />
     <MESSAGE value="Changed mongo host" />
     <MESSAGE value="Added branchName column" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added branchName column" />
+    <MESSAGE value="Changed the context root" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed the context root" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -828,13 +807,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/stackroute/mashupcontent/service/ContentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/stackroute/mashupcontent/repositories/SequenceRepo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -852,13 +824,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
@@ -934,6 +899,20 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/stackroute/mashupcontent/service/ContentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
