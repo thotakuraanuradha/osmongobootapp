@@ -1,29 +1,30 @@
 package com.stackroute.mashupcontent.comman;
 
-import com.stackroute.mashupcontent.model.Player;
+import com.stackroute.mashupcontent.model.MashupContent;
+
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class ResponseDto {
 
-    private Player player;
+    private MashupContent mashupContent;
 
-    private List<Player> playerList = new ArrayList();
+    List<MashupContent> mashupContentList = new ArrayList<>();
 
-    public Player getPlayer() {
-        return player;
+    public MashupContent getMashupContent() {
+        return mashupContent;
     }
 
-    public void setPlayer(Player player) {
-        this.player = player;
+    public void setMashupContent(MashupContent mashupContent) {
+        this.mashupContent = mashupContent;
     }
 
-    public List<Player> getPlayerList() {
-        return playerList;
+    public List<MashupContent> getMashupContentList() {
+        return mashupContentList;
     }
 
-    public void setPlayerList(List<Player> playerList) {
-        this.playerList = playerList;
+    public void setMashupContentList(List<MashupContent> mashupContentList) {
+        this.mashupContentList = mashupContentList;
     }
 }

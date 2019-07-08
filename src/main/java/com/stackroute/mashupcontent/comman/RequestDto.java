@@ -1,16 +1,28 @@
 package com.stackroute.mashupcontent.comman;
 
-import com.stackroute.mashupcontent.model.Player;
+import com.stackroute.mashupcontent.model.MashupContent;
+import com.stackroute.mashupcontent.model.MashupContent;
 
 public class RequestDto {
 
-    private Player player;
+    private MashupContent mashupContent;
 
-    public Player getPlayer() {
-        return player;
+    private String contentDetails;
+
+
+    public String getContentDetails() {
+        return contentDetails;
     }
 
-    public void setPlayer(Player player) {
-        this.player = player;
+    public void setContentDetails(String contentDetails) {
+        this.contentDetails = contentDetails;
+    }
+
+    public MashupContent getMashupContent() {
+        return mashupContent;
+    }
+
+    public void setMashupContent(MashupContent mashupContent) {
+        this.mashupContent = mashupContent;
     }
 }
